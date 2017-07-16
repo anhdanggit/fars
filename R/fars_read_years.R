@@ -14,7 +14,9 @@
 #' and be reported as error in the invalid \code{year}.
 #' If \code{year} is not integer, it would be transfered to \code{\link{as.integer}}.
 #'
-#' @importFrom readr dplyr magrittr
+#' @import readr
+#' @import dplyr
+#' @import magrittr
 #'
 #' @examples
 #' fars_read_years(c(2013,2014))
@@ -26,7 +28,7 @@ fars_read_years <- function(years) {
     file <- make_filename(year)
     tryCatch({
       dat <- fars_read(file)
-      dplyr::mutate(dat, year = year) %>%
+      magrittr::mutate(dat, year = year) %>%
         dplyr::select(MONTH, year)
     }, error = function(e) {
       warning("invalid year: ", year)

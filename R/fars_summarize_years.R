@@ -14,7 +14,9 @@
 #' and be reported as error in the invalid \code{year}.
 #' If \code{year} is not integer, it would be transfered to \code{\link{as.integer}}.
 #'
-#' @importFrom readr dplyr tidyr
+#' @import readr
+#' @import dplyr
+#' @import magrittr
 #'
 #' @examples
 #' fars_summarize_years(c(2013,2014))

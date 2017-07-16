@@ -16,7 +16,8 @@
 #' far_read("accident_2013.csv.bz2")
 #' far_read("accident_2014.csv.bz2")
 #'
-#' @importFrom readr dplyr
+#' @import readr
+#' @import dplyr
 #' @export
 fars_read <- function(filename) {
   if(!file.exists(system.file("extdata", filename, package = "fars")))

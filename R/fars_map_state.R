@@ -14,12 +14,14 @@
 #' If the location of a accident is \code{NA}, it would not be plotted in the map
 #' @note If \code{year} is not integer, it would be transfered to \code{\link{as.integer}}.
 #'
-#' @importFrom graphics maps
-#'
 #' @examples
 #' fars_map_state(1, 2013)
 #' fars_map_state(2, 2014)
 #'
+#' @import tidyr
+#' @import maps
+#' @import graphics
+#' @import dplyr
 #' @export
 fars_map_state <- function(state.num, year) {
   filename <- make_filename(year)
