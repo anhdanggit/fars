@@ -23,8 +23,3 @@ function \code{fars_read_years} returns \code{NULL}
 and be reported as error in the invalid \code{year}.
 If \code{year} is not integer, it would be transfered to \code{\link{as.integer}}.
 }
-\examples{
-fars_summarize_years(c(2013,2014))
-fars_summarize_years(2013)
-
-}

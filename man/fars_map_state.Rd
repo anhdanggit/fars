@@ -26,8 +26,3 @@ If the location of a accident is \code{NA}, it would not be plotted in the map
 
 If \code{year} is not integer, it would be transfered to \code{\link{as.integer}}.
 }
-\examples{
-fars_map_state(1, 2013)
-fars_map_state(2, 2014)
-
-}

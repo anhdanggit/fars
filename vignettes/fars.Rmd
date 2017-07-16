@@ -45,7 +45,7 @@ fars::make_filename(2014)
 
 Function `fars_read_years` takes a list of years and return the data of specific years, which only remains the variables of `MONTH` and `year`. It returns `NULL` if inputing invalid years.
 
-```{r warning = FALSE, message = FALSE}
+```{r warning = FALSE, message = FALSE, eval=FALSE}
 library(dplyr)
 fars::fars_read_years(c(2012, 2013))
 ```
@@ -54,10 +54,6 @@ fars::fars_read_years(c(2012, 2013))
 
 Function `fars_summarize_years` summarizes the number of fatal accidents in each `year` by `MONTH`.
 
-```{r warning = FALSE, message = FALSE}
-library(magrittr)
-fars::fars_summarize_years(2014)
-```
 
 ## (5) fars_map_state
 

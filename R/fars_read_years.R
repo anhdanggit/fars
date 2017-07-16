@@ -16,7 +16,7 @@
 #'
 #' @import readr
 #' @import dplyr
-#' @import magrittr
+#' @import tidyr
 #'
 #' @examples
 #' fars_read_years(c(2013,2014))
@@ -28,7 +28,7 @@ fars_read_years <- function(years) {
     file <- make_filename(year)
     tryCatch({
       dat <- fars_read(file)
-      magrittr::mutate(dat, year = year) %>%
+      tidyr::mutate(dat, year = year) %>%
         dplyr::select(MONTH, year)
     }, error = function(e) {
       warning("invalid year: ", year)
