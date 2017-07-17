@@ -17,6 +17,10 @@
 #' @import dplyr
 #' @import tidyr
 #'
+#' @examples
+#' \dontrun{fars_summarize_years(2014)}
+#' \dontrun{fars_summarize_years(c(2012, 2013))}
+#'
 #' @export
 fars_summarize_years <- function(years) {
   dat_list <- fars_read_years(years)

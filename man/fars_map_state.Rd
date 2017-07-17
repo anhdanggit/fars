@@ -26,3 +26,8 @@ If the location of a accident is \code{NA}, it would not be plotted in the map
 
 If \code{year} is not integer, it would be transfered to \code{\link{as.integer}}.
 }
+\examples{
+\dontrun{fars_map_state(1,2015)}
+\dontrun{fars_map_state(2, 2016)}
+
+}
