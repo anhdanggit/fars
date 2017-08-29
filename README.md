@@ -1,7 +1,7 @@
 # fars
 ### Functions of Analyze Fatality Accidents Data
 ##### Author: "Anh Dang (assignment from Coursera)"
-#### Travi Badge
+#### Travis Badge
 # [![Build Status](https://travis-ci.org/maianhdang/fars.svg?branch=master)](https://travis-ci.org/maianhdang/fars)
 
 ## Package Info
